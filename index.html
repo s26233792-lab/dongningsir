@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优途设计 | 10周年 · AI+UX全栈设计专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        :root {
+            --primary: #2563eb;
+            --accent: #7c3aed;
+        }
+
+        body {
+            font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, #f0f7ff 0%, #ffffff 100%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .partner-badge {
+            background: linear-gradient(90deg, #1e293b, #334155);
+        }
+
+        /* Project Image Styles */
+        .project-img-wrapper {
+            position: relative;
+            height: 16rem; /* 256px */
+            border-radius: 1.5rem;
+            overflow: hidden;
+            background-color: #f1f5f9;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .group:hover .project-img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">U</div>
+                <span class="text-xl font-extrabold tracking-tight">YOUTU <span class="text-blue-600">优途设计</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#home" class="hover:text-blue-600 transition">首屏</a>
+                <a href="#partners" class="hover:text-blue-600 transition">核心合伙人</a>
+                <a href="#curriculum" class="hover:text-blue-600 transition">AI全栈体系</a>
+                <a href="#cases" class="hover:text-blue-600 transition">实战项目</a>
+            </div>
+            <button class="bg-slate-900 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-blue-600 transition shadow-lg">咨询合作</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-32 pb-20 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center text-center">
+                <div data-aos="fade-down" class="mb-6 inline-flex items-center px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold tracking-widest uppercase">
+                    EST. 2016 · 拾年匠心 筑梦新径
+                </div>
+                <h1 data-aos="fade-up" class="text-5xl md:text-7xl font-extrabold leading-tight mb-8">
+                    从 <span class="text-blue-600 italic">大厂逻辑</span> 到<br>
+                    <span class="text-gradient">AI驱动</span> 的设计进化
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="100" class="text-lg text-slate-500 max-w-2xl mb-12">
+                    优途设计成立十周年。核心成员源自国家电网、360，采用合伙人制深度参与教学。我们不只是教画图，更是传授全栈软件开发与AI协同的实战思维。
+                </p>
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-wrap justify-center gap-4">
+                    <div class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-xl shadow-blue-200 hover:scale-105 transition">查看最新作品集</div>
+                    <div class="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition">了解合伙人制度</div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-slate-900 mb-2">10</div>
+                    <div class="text-xs text-slate-400 font-bold tracking-widest uppercase">成立载数</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-slate-900 mb-2">1000+</div>
+                    <div class="text-xs text-slate-400 font-bold tracking-widest uppercase">培养学员</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-slate-900 mb-2">100%</div>
+                    <div class="text-xs text-slate-400 font-bold tracking-widest uppercase">2025届就业率</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-slate-900 mb-2">TOP 50</div>
+                    <div class="text-xs text-slate-400 font-bold tracking-widest uppercase">大厂在职学员</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-extrabold mb-4">核心合伙人 <span class="text-blue-600">背书</span></h2>
+                    <p class="text-slate-500">真正的资深，来自于在一线大型项目中的摸爬滚打。合伙人制确保了我们对每一位学员、每一个项目的深度负责。</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Instructor Zhu -->
+                <div class="card-hover p-10 bg-slate-50 rounded-3xl relative overflow-hidden group" data-aos="fade-right">
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold">朱</div>
+                            <div class="ml-6">
+                                <h3 class="text-2xl font-bold">朱老师 <span class="text-sm font-normal text-slate-400 ml-2">创始人</span></h3>
+                                <div class="flex gap-2 mt-1">
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-600 text-[10px] font-bold rounded">蓝湖签约伙伴</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-600 text-[10px] font-bold rounded">Eagle签约伙伴</span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 text-slate-600 text-sm leading-relaxed mb-8">
+                            <li>• 曾就职于 <b>奇虎 360、南方电网、清华同方</b> 等名企。</li>
+                            <li>• 现任 <b>中国移动学院</b> 特聘交互讲师。</li>
+                            <li>• 主导 <b>iTarms 企业信息化平台、吉林省公安部卡口管理系统</b> 等大型项目。</li>
+                        </ul>
+                        <div class="partner-badge p-4 rounded-xl text-white">
+                            <p class="text-[10px] opacity-60 uppercase mb-1">Expertise</p>
+                            <p class="text-sm font-semibold">UX/UE 实战架构 · 复杂信息化系统设计</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor Zhou -->
+                <div class="card-hover p-10 bg-slate-900 rounded-3xl relative overflow-hidden group text-white" data-aos="fade-left">
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-slate-900 text-3xl font-bold">周</div>
+                            <div class="ml-6">
+                                <h3 class="text-2xl font-bold text-white">周老师 <span class="text-sm font-normal text-slate-400 ml-2">联合创始人</span></h3>
+                                <div class="flex gap-2 mt-1">
+                                    <span class="px-2 py-0.5 bg-slate-700 text-white text-[10px] font-bold rounded">项目经理背景</span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 text-slate-400 text-sm leading-relaxed mb-8">
+                            <li>• 曾就职于 <b>国家电网、亚信在线、天地阳光</b>。</li>
+                            <li>• 参与 <b>两会视频会议系统、公安部安保视频系统</b> 等重要政务项目。</li>
+                            <li>• 擅长全流程软件开发管理，确保教学内容具备商业落地深度。</li>
+                        </ul>
+                        <div class="bg-blue-600 p-4 rounded-xl text-white">
+                            <p class="text-[10px] opacity-60 uppercase mb-1">Expertise</p>
+                            <p class="text-sm font-semibold">G端政务系统 · 项目管理 · 全栈流程</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-extrabold mb-4" data-aos="fade-up">2026 全栈式人才培养体系</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">AI+UX+UI+PM 四位一体，不仅是设计，更是解决问题的全栈能力。</p>
+        </div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-6">
+            <div class="p-8 bg-white rounded-3xl border border-slate-100 text-center card-hover" data-aos="zoom-in" data-aos-delay="0">
+                <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h4 class="font-bold text-lg mb-2">AI 协同设计</h4>
+                <p class="text-xs text-slate-400">Midjourney / SD / ChatGPT 深度集成工作流</p>
+            </div>
+            <div class="p-8 bg-white rounded-3xl border border-slate-100 text-center card-hover" data-aos="zoom-in" data-aos-delay="100">
+                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h4 class="font-bold text-lg mb-2">UX 核心逻辑</h4>
+                <p class="text-xs text-slate-400">大厂交互方法论 / 用户调研 / 数据驱动设计</p>
+            </div>
+            <div class="p-8 bg-white rounded-3xl border border-slate-100 text-center card-hover" data-aos="zoom-in" data-aos-delay="200">
+                <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <h4 class="font-bold text-lg mb-2">UI 高阶美学</h4>
+                <p class="text-xs text-slate-400">C4D 3D渲染 / 动效交付 / 极致视觉系统</p>
+            </div>
+            <div class="p-8 bg-white rounded-3xl border border-slate-100 text-center card-hover" data-aos="zoom-in" data-aos-delay="300">
+                <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                </div>
+                <h4 class="font-bold text-lg mb-2">PM 增长思维</h4>
+                <p class="text-xs text-slate-400">产品架构 / 竞品分析 / 商业需求转化</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold mb-12">实战项目 <span class="text-blue-600">案例库</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                
+                <!-- Project 1: iTarms -->
+                <div class="group cursor-pointer" data-aos="fade-up">
+                    <div class="project-img-wrapper mb-6 shadow-sm">
+                        <!-- 请将图片放在 index.html 所在目录的 images 文件夹中 -->
+                        <img src="images/itarms-cover.jpg" alt="iTarms 企业信息化管理平台" class="project-img" onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=iTarms+Project'">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">iTarms 企业信息化管理平台</h4>
+                    <p class="text-sm text-slate-400 italic font-medium mb-4">#B端 #资产管理 #任务系统</p>
+                    <p class="text-sm text-slate-500">通过组件化设计体系，提升 10+ 业务模块的集成速度，打造企业级全流程管理闭环。</p>
+                </div>
+
+                <!-- Project 2: 公安卡口系统 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img-wrapper mb-6 shadow-sm">
+                        <!-- 建议命名: police-checkpoint-cover.jpg -->
+                        <img src="images/police-checkpoint-cover.jpg" alt="吉林省公安部卡口管理系统" class="project-img" onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Police+Checkpoint+System'">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">吉林省公安部卡口管理系统</h4>
+                    <p class="text-sm text-slate-400 italic font-medium mb-4">#G端 #安防可视化 #大数据</p>
+                    <p class="text-sm text-slate-500">主导全链路交互设计，优化警情处理效率，支撑省级交通安防核心业务调度。</p>
+                </div>
+
+                <!-- Project 3: 中石化采购系统 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img-wrapper mb-6 shadow-sm">
+                        <!-- 建议命名: sinopec-procurement-cover.jpg -->
+                        <img src="images/sinopec-procurement-cover.jpg" alt="中石化全球采购系统" class="project-img" onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Sinopec+Global+Procurement'">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">中石化全球采购系统</h4>
+                    <p class="text-sm text-slate-400 italic font-medium mb-4">#B端 #全球供应链 #大数据集</p>
+                    <p class="text-sm text-slate-500">支撑中石化全球范围内海量物资采购，处理高并发数据流，实现跨国业务的高效协同。</p>
+                </div>
+
+                <!-- Project 4: 两会视频会议 -->
+                <div class="group cursor-pointer" data-aos="fade-up">
+                    <div class="project-img-wrapper mb-6 shadow-sm">
+                        <!-- 建议命名: two-sessions-video-cover.jpg -->
+                        <img src="images/two-sessions-video-cover.jpg" alt="两会视频会议系统" class="project-img" onerror="this.src='https://placehold.co/600x400/b91c1c/ffffff?text=National+Conference+Video'">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">两会视频会议系统</h4>
+                    <p class="text-sm text-slate-400 italic font-medium mb-4">#G端 #高可靠性 #视讯通讯</p>
+                    <p class="text-sm text-slate-500">深度参与国家级重大会议通讯保障，在零延迟要求下构建极致稳定的视讯交互体验。</p>
+                </div>
+
+                <!-- Project 5: 公安部安保视频 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img-wrapper mb-6 shadow-sm">
+                        <!-- 建议命名: mps-security-video-cover.jpg -->
+                        <img src="images/mps-security-video-cover.jpg" alt="公安部安保视频系统" class="project-img" onerror="this.src='https://placehold.co/600x400/312e81/ffffff?text=MPS+Security+Video'">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">公安部安保视频系统</h4>
+                    <p class="text-sm text-slate-400 italic font-medium mb-4">#G端 #实时监控 #安保指挥</p>
+                    <p class="text-sm text-slate-500">构建多维数据融合的实时安保指挥舱，实现超大规模视频流的智能化检索与调度。</p>
+                </div>
+
+                <!-- Project 6: 中矿采矿系统 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img-wrapper mb-6 shadow-sm">
+                        <!-- 建议命名: mining-thallium-cover.jpg -->
+                        <img src="images/mining-thallium-cover.jpg" alt="中矿集团铊矿采矿系统" class="project-img" onerror="this.src='https://placehold.co/600x400/334155/ffffff?text=Mining+Smart+System'">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">中矿集团铊矿采矿系统</h4>
+                    <p class="text-sm text-slate-400 italic font-medium mb-4">#工业互联网 #数字孪生 #智能采矿</p>
+                    <p class="text-sm text-slate-500">运用数字孪生技术映射采矿全流程，实现铊矿开采的智能化预警与远程生产监控。</p>
+                </div>
+
+            </div>
+
+            <!-- Client Logos -->
+            <div class="mt-24 py-10 border-t border-slate-100 flex flex-wrap justify-between items-center gap-8 opacity-40 grayscale">
+                <span class="text-lg font-bold">国家电网</span>
+                <span class="text-lg font-bold">奇虎 360</span>
+                <span class="text-lg font-bold">中船集团</span>
+                <span class="text-lg font-bold">中矿集团</span>
+                <span class="text-lg font-bold">公安部</span>
+                <span class="text-lg font-bold">中石化</span>
+                <span class="text-lg font-bold">南方电网</span>
+                <span class="text-lg font-bold">中国移动</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
+                <div class="max-w-xs">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center text-white font-bold">U</div>
+                        <span class="text-xl font-extrabold tracking-tight">YOUTU</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        优途设计 (前北京创享)，成立于2016年。致力于将真实的行业经验转化为高品质的设计教育。
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-16">
+                    <div>
+                        <h5 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6">快速链接</h5>
+                        <ul class="space-y-4 text-sm font-medium">
+                            <li><a href="#" class="hover:text-blue-500 transition">加入我们</a></li>
+                            <li><a href="#" class="hover:text-blue-500 transition">课程预约</a></li>
+                            <li><a href="#" class="hover:text-blue-500 transition">学员喜报</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6">联系合伙人</h5>
+                        <p class="text-sm text-slate-400 mb-2">北京市朝阳区 · 设计教育基地</p>
+                        <p class="text-lg font-bold">400-XXX-XXXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                &copy; 2016-2026 优途设计 YOUTU DESIGN. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
